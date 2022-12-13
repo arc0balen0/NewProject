@@ -8,6 +8,6 @@ public class Main {
         SalesManager sales = new SalesManager(price);
         System.out.println("Sale max = " + sales.max());// максимальное значение;
         System.out.println("Sale min = " + sales.min());// минимальное знчаение;
-        System.out.println("Sale stat = " + sales.stat());//
+        System.out.println("Sale stat = " + sales.stat());// среднее значение;
     }
 }
