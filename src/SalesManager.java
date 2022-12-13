@@ -1,13 +1,13 @@
 public class SalesManager {
-    protected long[] sales;
+    protected int[] sales;
 
-    public SalesManager(long[] sales) {//создаем открытый метод SalesManager;
+    public SalesManager(int[] sales) {//создаем открытый метод SalesManager;
         this.sales = sales;
     }
 
-    public long max() {//создаем открытый метод max;
-        long max = -1;// если max = -1;
-        for (long sale : sales) { // то метод max идет перебором по имеющимся у нас значениям массива;
+    public int max() {//создаем открытый метод max;
+        int max = -1;// если max = -1;
+        for (int sale : sales) { // то метод max идет перебором по имеющимся у нас значениям массива;
             if (sale > max) { //если sale > max; max = sale;
                 max = sale;
             }
@@ -15,9 +15,9 @@ public class SalesManager {
         return max;//возвращаем значеие max;
     }
 
-    public long min() {//создаем открытый метод min;
-        long min = max();//если min = max;
-        for (long sale : sales) {//то метод sale идет перебором по имеющимся у нас значениям массива;
+    public int min() {//создаем открытый метод min;
+        int min = max();//если min = max;
+        for (int sale : sales) {//то метод sale идет перебором по имеющимся у нас значениям массива;
             if (sale < min) {//sale < min, то
                 min = sale;// min = sale;
             }
@@ -25,12 +25,12 @@ public class SalesManager {
         return min;//возвращем значение min = sale;
     }
 
-    public long stat() {//создаем метод stat;
+    public int stat() {//создаем метод stat;
         int stat = 0;//начальное значение переменной stat = 0;
         int i = 0;
         int n = 0;
         int x = 0;
-        for (long sale : sales) {
+        for (int sale : sales) {
             //if (min() != sale $$ sale != max() ) {
             //   stat += sale;
             //   i++;
